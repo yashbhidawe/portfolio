@@ -76,7 +76,6 @@ export const TechUsed = ({ technologies }) => {
     return null;
   }
 
-  // Map of icon component names to display texts
   const techNameMap = {
     IconBrandReact: "React",
     IconBrandTailwind: "Tailwind",
@@ -91,9 +90,7 @@ export const TechUsed = ({ technologies }) => {
       {technologies.map((Tech, index) => {
         if (!Tech) return null;
 
-        // Get the component name
         const techComponentName = Tech.displayName || Tech.name;
-        // Use the mapped name or fall back to the component name
         const displayName =
           techNameMap[techComponentName] || techComponentName || "Tech";
 

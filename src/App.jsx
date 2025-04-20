@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./components/Hero";
 import { FloatingDockDemo } from "./components/FloatingDockDemo";
 import Projects from "./components/Projects";
+import TechStack from "./components/TechStack";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       </div>
       <Hero />
       <Projects />
+      <TechStack />
     </div>
   );
 };
