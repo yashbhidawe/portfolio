@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "motion/react";
+import { filterProps, motion } from "motion/react";
 import { SiZedindustries } from "react-icons/si";
 
 import {
@@ -82,7 +82,9 @@ const techStackData = {
 const TechStack = () => {
   const renderTechSection = (techArray, title) => (
     <div className="mt-12 mb-16">
-      <h2 className="text-2xl  font-semibold text-white mb-6">{title}</h2>
+      <h2 className="text-2xl font-semibold text-white mb-6 text-center">
+        {title}
+      </h2>
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8">
         {techArray.map((tech, index) => (
           <motion.div
@@ -93,19 +95,14 @@ const TechStack = () => {
             transition={{ delay: index * 0.1, duration: 0.3 }}
           >
             <motion.div
-              className="w-24 h-24 flex items-center justify-center bg-zinc-800 rounded-md mb-2 bg-gradient-to-r hover:from-blue-700 hover:to-indigo-800"
+              className="w-24 h-24 flex items-center justify-center bg-zinc-800  md:bg-zinc-800  rounded-md mb-2"
               whileHover={{
                 scale: 1.1,
                 transition: { duration: 0.2 },
-                color: "white",
+                background: tech.color,
               }}
             >
-              <motion.div
-                whileHover={{ color: "#ffffff" }}
-                transition={{ duration: 0.3 }}
-              >
-                <tech.Icon className="w-8 h-8" />
-              </motion.div>
+              <tech.Icon className="w-8 h-8 text-gray-300 transition-colors duration-300" />
             </motion.div>
             <span className="text-sm text-gray-300 text-center">
               {tech.name}

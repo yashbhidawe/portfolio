@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import { FloatingDockDemo } from "./components/FloatingDockDemo";
 import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Hero />
       <Projects />
       <TechStack />
+      <Contact />
     </div>
   );
 };
