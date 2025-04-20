@@ -2,7 +2,7 @@ import React from "react";
 import { ShootingStars } from "./ui/shooting-stars";
 import { StarsBackground } from "./ui/starts-background";
 import heroImage2 from "../assets/images/heroImage-2.png";
-import { Download, Mail } from "lucide-react";
+import { ArrowDown, ArrowDown01Icon, Download, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -118,6 +118,7 @@ const Hero = () => {
                   src={heroImage2}
                   alt="Yash's profile"
                   className="rounded-full object-cover w-64 h-64 border-2 border-blue-400"
+                  loading="lazy"
                 />
               </div>
             </motion.div>
@@ -127,9 +128,8 @@ const Hero = () => {
             variants={itemVariants}
             className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
           >
-            <span className="text-gray-400 text-sm mb-2">Scroll Down</span>
             <div className="w-5 h-10 border-2 border-gray-400 rounded-full flex justify-center p-1">
-              <div className="w-1 h-2 bg-white rounded-full animate-bounce"></div>
+              <ArrowDown className="w-full h-full text-gray-400 animate-bounce" />
             </div>
           </motion.div>
         </motion.div>
