@@ -18,7 +18,7 @@ const Contact = () => {
     },
     {
       icon: SiX,
-      title: "X",
+      title: "X (Twitter)",
       link: "https://x.com/itsokyash_",
       color: "#1DA1F2",
     },
@@ -26,7 +26,7 @@ const Contact = () => {
       icon: SiGithub,
       title: "Github",
       link: "https://github.com/yashbhidawe",
-      color: "#181717",
+      color: "#000000",
     },
     {
       icon: SiLinkedin,
@@ -58,7 +58,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center py-16 px-4">
+    <div
+      id="contact"
+      className="flex flex-col justify-center items-center py-16 px-4"
+    >
       <motion.h1
         className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-white to-indigo-300 mb-12 text-center"
         initial={{ opacity: 0, y: -20 }}

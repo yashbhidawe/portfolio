@@ -14,7 +14,10 @@ import {
 
 export default function Projects() {
   return (
-    <div className="max-w-5xl mx-auto px-8 flex flex-col justify-center items-center">
+    <div
+      id="projects"
+      className="max-w-5xl mx-auto px-8 flex flex-col justify-center items-center"
+    >
       <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-white to-indigo-300">
         What I've Built
       </h1>
@@ -26,7 +29,7 @@ export const projects = [
   {
     title: "Tinder For Geeks",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "A developer matchmaking app with real-time chat, profile swipes, and smooth animations for connecting like-minded coders.",
     link: "https://tinder-for-geeks.vercel.app",
     imageUrl: tinder,
     tech: [
@@ -39,7 +42,7 @@ export const projects = [
   {
     title: "Printi.in",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+      "A modern custom printing platform supporting dynamics of e-commerce with admin control—built for print businesses.",
     link: "https://printi.in",
     imageUrl: printi,
     tech: [
@@ -52,7 +55,7 @@ export const projects = [
   {
     title: "Trillicorn Technology",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
+      "Responsive landing page built for a tech startup to showcase services, attract clients, and build credibility through clean UI/UX.",
     link: "https://trillicorn-technology.vercel.app/",
     imageUrl: trillicorn,
     tech: [IconBrandReact, IconBrandTailwind],
@@ -60,7 +63,7 @@ export const projects = [
   {
     title: "Itsokyash",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+      "Personal portfolio site showcasing projects, experience, and contact form—built with smooth transitions and a focus on design precision.",
     link: "https://itsokyash.vercel.app",
     imageUrl: portfolio,
     tech: [IconBrandReact, IconBrandTailwind, IconBrandFramerMotion],

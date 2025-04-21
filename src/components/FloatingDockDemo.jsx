@@ -8,6 +8,8 @@ import {
   IconNewSection,
   IconTerminal2,
 } from "@tabler/icons-react";
+import { SiLetterboxd, SiSocketdotio } from "react-icons/si";
+import { Contact } from "lucide-react";
 
 export function FloatingDockDemo() {
   const links = [
@@ -20,41 +22,37 @@ export function FloatingDockDemo() {
     },
 
     {
-      title: "Products",
+      title: "Projects",
       icon: (
         <IconTerminal2 className="h-full w-full text-white dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "#projects",
     },
     {
-      title: "Components",
+      title: "Experience",
       icon: (
-        <IconNewSection className="h-full w-full text-white dark:text-neutral-300" />
+        <SiLetterboxd className="h-full w-full text-white dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "#experience",
     },
     {
-      title: "Aceternity UI",
+      title: "Tech-Stack",
       icon: (
-        <img
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
+        <SiSocketdotio className="h-full w-full text-white dark:text-neutral-300" />
       ),
-      href: "#",
-    },
-    {
-      title: "Changelog",
-      icon: (
-        <IconExchange className="h-full w-full text-white dark:text-neutral-300" />
-      ),
-      href: "#",
+      href: "#tech",
     },
 
     {
-      title: "Twitter",
+      title: "Contact",
+      icon: (
+        <Contact className="h-full w-full text-white dark:text-neutral-300" />
+      ),
+      href: "#contact",
+    },
+
+    {
+      title: "X(Twitter)",
       icon: (
         <IconBrandX className="h-full w-full text-white dark:text-neutral-300" />
       ),
@@ -65,7 +63,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconBrandGithub className="h-full w-full text-white dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.github.com/yashbhidawe",
     },
   ];
   return (

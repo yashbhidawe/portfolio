@@ -4,6 +4,7 @@ import { FloatingDockDemo } from "./components/FloatingDockDemo";
 import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
 import Contact from "./components/Contact";
+import { Experience } from "./components/Experience";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       </div>
       <Hero />
       <Projects />
+      <Experience />
       <TechStack />
       <Contact />
     </div>

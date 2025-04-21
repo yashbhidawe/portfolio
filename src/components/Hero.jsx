@@ -77,14 +77,16 @@ const Hero = () => {
               </motion.p>
 
               <motion.div variants={itemVariants} className="flex gap-4 pt-6">
-                <motion.button
-                  className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md hover:shadow-indigo-500/50 cursor-pointer"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Download size={18} />
-                  Download CV
-                </motion.button>
+                <a href="https://drive.google.com/file/d/1JNDLqhHBwqM8fT7EXypclXkh96I8g9W1/view?usp=sharing">
+                  <motion.button
+                    className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md hover:shadow-indigo-500/50 cursor-pointer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Download size={18} />
+                    Download CV
+                  </motion.button>
+                </a>
 
                 <motion.button
                   className="flex items-center gap-2 bg-transparent border-2 border-gray-500 hover:border-white text-gray-300 hover:text-white px-6 py-3 rounded-full font-medium transition-all cursor-pointer"

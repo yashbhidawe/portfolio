@@ -81,7 +81,7 @@ const techStackData = {
 
 const TechStack = () => {
   const renderTechSection = (techArray, title) => (
-    <div className="mt-12 mb-16">
+    <div id="tech" className="mt-12 mb-16">
       <h2 className="text-2xl font-semibold text-white mb-6 text-center">
         {title}
       </h2>
@@ -99,7 +99,7 @@ const TechStack = () => {
               whileHover={{
                 scale: 1.1,
                 transition: { duration: 0.2 },
-                background: tech.color,
+                background: "#000000",
               }}
             >
               <tech.Icon className="w-8 h-8 text-gray-300 transition-colors duration-300" />
@@ -121,7 +121,7 @@ const TechStack = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        Tech That I Use!
+        Tech That I've Used!
       </motion.h1>
       <div className="max-w-2xl w-full">
         {renderTechSection(techStackData.frontend, "Frontend")}
