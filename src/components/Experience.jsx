@@ -33,7 +33,7 @@ export function Experience() {
       title: "2024",
       content: (
         <div>
-          <p className="mb-2 text-sm font-medium text-neutral-900 dark:text-neutral-100">
+          <p className="mb-2 text-sm font-medium text-white dark:text-neutral-100">
             Frontend Developer · Freelance (2024 – Present)
           </p>
           <ul className="list-disc pl-4 text-xs font-normal text-white md:text-sm dark:text-neutral-200">

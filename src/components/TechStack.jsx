@@ -25,24 +25,8 @@ import {
   SiFigma,
   SiJsonwebtokens,
   SiShadcnui,
+  SiInternetcomputer,
 } from "react-icons/si";
-
-const SiRestApi = (props) => (
-  <div
-    {...props}
-    className={`${props.className || ""} flex items-center justify-center`}
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      width="1em"
-      height="1em"
-    >
-      <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm2.5 12h1.93c.42 0 .79-.23.93-.59l1.69-4.51c.14-.38.1-.76-.11-1.05-.19-.3-.52-.45-.9-.45H9.1c-.42 0-.79.23-.93.59l-1.7 4.51c-.13.38-.1.76.11 1.05.19.3.52.45.92.45zm8 2h1c.55 0 1-.45 1-1v-1h-1c-.55 0-1 .45-1 1v1zm-8-8h1c.55 0 1-.45 1-1V7h-1c-.55 0-1 .45-1 1v1zm14-1c0-.55-.45-1-1-1h-1v1c0 .55.45 1 1 1h1V8zM5 7c-.55 0-1 .45-1 1v1h1c.55 0 1-.45 1-1V7H5zm14 9c0-.55-.45-1-1-1h-1v1c0 .55.45 1 1 1h1v-1zM5 15c-.55 0-1 .45-1 1v1h1c.55 0 1-.45 1-1v-1H5z" />
-    </svg>
-  </div>
-);
 
 const techStackData = {
   frontend: [
@@ -75,7 +59,7 @@ const techStackData = {
     { Icon: SiPostman, name: "Postman", color: "#FF6C37" },
     { Icon: SiFigma, name: "Figma", color: "#F24E1E" },
     { Icon: SiJsonwebtokens, name: "JWT", color: "#000000" },
-    { Icon: SiRestApi, name: "REST APIs", color: "#6BA539" },
+    { Icon: SiInternetcomputer, name: "REST APIs", color: "#6BA539" },
   ],
 };
 

@@ -77,7 +77,10 @@ const Hero = () => {
               </motion.p>
 
               <motion.div variants={itemVariants} className="flex gap-4 pt-6">
-                <a href="https://drive.google.com/file/d/1JNDLqhHBwqM8fT7EXypclXkh96I8g9W1/view?usp=sharing">
+                <a
+                  href="https://drive.google.com/file/d/1JNDLqhHBwqM8fT7EXypclXkh96I8g9W1/view?usp=sharing"
+                  target="_blank"
+                >
                   <motion.button
                     className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md hover:shadow-indigo-500/50 cursor-pointer"
                     whileHover={{ scale: 1.05 }}
@@ -88,14 +91,17 @@ const Hero = () => {
                   </motion.button>
                 </a>
 
-                <motion.button
-                  className="flex items-center gap-2 bg-transparent border-2 border-gray-500 hover:border-white text-gray-300 hover:text-white px-6 py-3 rounded-full font-medium transition-all cursor-pointer"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Mail size={18} />
-                  Hire Me
-                </motion.button>
+                <a href="#contact">
+                  {" "}
+                  <motion.button
+                    className="flex items-center gap-2 bg-transparent border-2 border-gray-500 hover:border-white text-gray-300 hover:text-white px-6 py-3 rounded-full font-medium transition-all cursor-pointer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Mail size={18} />
+                    Hire Me
+                  </motion.button>
+                </a>
               </motion.div>
 
               <div className="flex flex-wrap justify-center md:justify-start gap-2 pt-4">
@@ -125,15 +131,6 @@ const Hero = () => {
               </div>
             </motion.div>
           </div>
-
-          <motion.div
-            variants={itemVariants}
-            className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
-          >
-            <div className="w-5 h-10 border-2 border-gray-400 rounded-full flex justify-center p-1">
-              <ArrowDown className="w-full h-full text-gray-400 animate-bounce" />
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </div>
