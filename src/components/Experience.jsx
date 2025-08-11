@@ -34,7 +34,7 @@ export function Experience() {
       content: (
         <div>
           <p className="mb-2 text-sm font-medium text-white dark:text-neutral-100">
-            Frontend Developer · Freelance (2024 – Present)
+            Frontend Developer · Freelance (2024 – 2025)
           </p>
           <ul className="list-disc pl-4 text-xs font-normal text-white md:text-sm dark:text-neutral-200">
             <li className="mb-2">
@@ -50,6 +50,27 @@ export function Experience() {
               Delivered multiple frontend projects using React, Tailwind, and
               Firebase—emphasizing user-centric design and collaborative
               development.
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: "2025",
+      content: (
+        <div>
+          <p className="mb-2 text-sm font-medium text-white dark:text-neutral-100">
+            Software Engineer Intern · EaseMyExpo (Aug 2025 – Present)
+          </p>
+          <ul className="list-disc pl-4 text-xs font-normal text-white md:text-sm dark:text-neutral-200">
+            <li className="mb-2">
+              To be updated with the latest contributions and projects.
+            </li>
+            <li className="mb-2">
+              To be updated with the latest contributions and projects.
+            </li>
+            <li className="mb-2">
+              To be updated with the latest contributions and projects.
             </li>
           </ul>
         </div>

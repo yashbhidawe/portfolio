@@ -3,6 +3,8 @@ import printi from "../assets/images/printi.png";
 import portfolio from "../assets/images/portfolio.png";
 import tinder from "../assets/images/tinder-for-geeks.png";
 import trillicorn from "../assets/images/trillicorn-technology.png";
+import guidena from "../assets/images/guidena.png";
+import vakrtund from "../assets/images/vakrtund.png";
 import {
   IconBrandNodejs,
   IconBrandReact,
@@ -10,6 +12,8 @@ import {
   IconBrandTailwind,
   IconBrandFirebase,
   IconBrandFramerMotion,
+  IconBrandTypescript as Typescript,
+  IconBrandNextjs as NextJS,
 } from "@tabler/icons-react";
 
 export default function Projects() {
@@ -26,6 +30,23 @@ export default function Projects() {
   );
 }
 export const projects = [
+  {
+    title: "GuidenaHQ",
+    description:
+      "Seamless 1:1 mentorships where learners can connect with skilled mentors, send personalized requests, track statuses, manage ongoing mentorships, chat in real-time, and host video-based meetings.",
+    link: "https://guidenahq.vercel.app/",
+    imageUrl: guidena,
+    tech: [IconBrandReact, Typescript, IconBrandMongodb, IconBrandNodejs],
+  },
+  {
+    title: "Vakratund Advertisings",
+    description:
+      " a creative agency specializing in impactful branding and digital marketing. The site was built as part of a freelance engagement, focused on delivering a visually appealing and mobile-first experience aligned with the client's brand identity.",
+    link: "https://www.vakratundaadvertising.com/",
+    imageUrl: vakrtund,
+    tech: [NextJS, IconBrandFramerMotion, IconBrandTailwind],
+  },
+
   {
     title: "Tinder For Geeks",
     description:
