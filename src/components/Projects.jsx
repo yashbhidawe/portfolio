@@ -12,8 +12,8 @@ import {
   IconBrandTailwind,
   IconBrandFirebase,
   IconBrandFramerMotion,
-  IconBrandTypescript as Typescript,
-  IconBrandNextjs as NextJS,
+  IconBrandTypescript,
+  IconBrandNextjs,
 } from "@tabler/icons-react";
 
 export default function Projects() {
@@ -36,7 +36,12 @@ export const projects = [
       "Seamless 1:1 mentorships where learners can connect with skilled mentors, send personalized requests, track statuses, manage ongoing mentorships, chat in real-time, and host video-based meetings.",
     link: "https://guidenahq.vercel.app/",
     imageUrl: guidena,
-    tech: [IconBrandReact, Typescript, IconBrandMongodb, IconBrandNodejs],
+    tech: [
+      IconBrandReact,
+      IconBrandTypescript,
+      IconBrandMongodb,
+      IconBrandNodejs,
+    ],
   },
   {
     title: "Vakratund Advertisings",
@@ -44,7 +49,12 @@ export const projects = [
       " a creative agency specializing in impactful branding and digital marketing. The site was built as part of a freelance engagement, focused on delivering a visually appealing and mobile-first experience aligned with the client's brand identity.",
     link: "https://www.vakratundaadvertising.com/",
     imageUrl: vakrtund,
-    tech: [NextJS, IconBrandFramerMotion, IconBrandTailwind],
+    tech: [
+      IconBrandTypescript,
+      IconBrandNextjs,
+      IconBrandFramerMotion,
+      IconBrandTailwind,
+    ],
   },
 
   {

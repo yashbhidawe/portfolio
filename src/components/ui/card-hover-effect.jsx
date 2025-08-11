@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+// eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from "motion/react";
 import { LinkIcon } from "lucide-react";
 import { useState } from "react";
@@ -83,6 +84,8 @@ export const TechUsed = ({ technologies }) => {
     IconBrandNodejs: "Node.js",
     IconBrandFirebase: "Firebase",
     IconBrandFramerMotion: "Framer Motion",
+    IconBrandTypescript: "Typescript",
+    IconBrandNextjs: "NextJS",
   };
 
   return (
