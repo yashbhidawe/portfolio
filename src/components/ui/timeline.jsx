@@ -33,9 +33,8 @@ export const Timeline = ({ data }) => {
         </h2>
         <div className="w-full flex justify-center items-center">
           {" "}
-          <p className=" text-sm md:text-base max-w-sm text-center">
-            I&apos;ve been learning web development passionately for the past 2
-            years. Here&apos;s a timeline of my journey.
+          <p className="text-sm md:text-base max-w-sm text-center">
+            Here's a glimpse of how the journey has unfolded.
           </p>
         </div>
       </div>

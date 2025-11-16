@@ -60,17 +60,30 @@ export function Experience() {
       content: (
         <div>
           <p className="mb-2 text-sm font-medium text-white dark:text-neutral-100">
-            Software Engineer Intern · EaseMyExpo (Aug 2025 – Present)
+            Software Engineer Intern · EaseMyExpo (Aug 2025 – Nov 2025)
           </p>
           <ul className="list-disc pl-4 text-xs font-normal text-white md:text-sm dark:text-neutral-200">
             <li className="mb-2">
-              To be updated with the latest contributions and projects.
+              Rewrote a core feature that was originally flat and basic into a
+              fully dynamic workflow powered by OpenCV and Tesseract, improving
+              accuracy by about 90%.
             </li>
             <li className="mb-2">
-              To be updated with the latest contributions and projects.
+              Built and maintained features across three different applications
+              with different stacks: FastAPI + React + Hono, MERN, and React +
+              Firebase.
             </li>
             <li className="mb-2">
-              To be updated with the latest contributions and projects.
+              Improved backend stability, added proper validations, and cleaned
+              up legacy code that was slowing the product down.
+            </li>
+            <li className="mb-2">
+              Collaborated with the UI/UX team to redesign and rebuild key
+              interfaces, focusing on usability and smoother user flows.
+            </li>
+            <li className="mb-2">
+              Worked closely with the engineering team to plan changes, review
+              code, and ship reliable features in a fast-paced environment.
             </li>
           </ul>
         </div>
