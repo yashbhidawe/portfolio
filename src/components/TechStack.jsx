@@ -1,6 +1,13 @@
 import React from "react";
 import { filterProps, motion } from "motion/react";
-import { SiZedindustries } from "react-icons/si";
+import {
+  SiDocker,
+  SiFastapi,
+  SiOpencv,
+  SiPython,
+  SiReactquery,
+  SiZedindustries,
+} from "react-icons/si";
 
 import {
   SiReact,
@@ -34,11 +41,11 @@ const techStackData = {
     { Icon: SiTypescript, name: "Typescript", color: "#3079c6" },
     { Icon: SiNextdotjs, name: "Next.js", color: "#000000" },
     { Icon: SiRedux, name: "Redux Toolkit", color: "#764ABC" },
+    { Icon: SiReactquery, name: "React Query", color: "#06B6D4" },
     { Icon: SiZedindustries, name: "Zustand", color: "#ffffff" },
     { Icon: SiTailwindcss, name: "Tailwind CSS", color: "#06B6D4" },
     { Icon: SiShadcnui, name: "ShadCN", color: "#000000" },
     { Icon: SiFramer, name: "Framer Motion", color: "#feeb0f" },
-    { Icon: SiDaisyui, name: "DaisyUI", color: "#06B6D4" },
     { Icon: SiJavascript, name: "JavaScript (ES6)", color: "#F7DF1E" },
     { Icon: SiHtml5, name: "HTML5", color: "#E34F26" },
     { Icon: SiCss3, name: "CSS3", color: "#1572B6" },
@@ -46,11 +53,11 @@ const techStackData = {
 
   backend: [
     { Icon: SiNodedotjs, name: "Node.js", color: "#339933" },
+    { Icon: SiPython, name: "Python", color: "#F02E65" },
     { Icon: SiExpress, name: "Express.js", color: "#000000" },
     { Icon: SiMongodb, name: "MongoDB", color: "#47A248" },
+    { Icon: SiFastapi, name: "FastAPI", color: "#010101" },
     { Icon: SiFirebase, name: "Firebase", color: "#FFCA28" },
-    { Icon: SiAppwrite, name: "Appwrite", color: "#F02E65" },
-    { Icon: SiSocketdotio, name: "Socket.io", color: "#010101" },
   ],
 
   tools: [
@@ -58,8 +65,8 @@ const techStackData = {
     { Icon: SiGithub, name: "GitHub", color: "#181717" },
     { Icon: SiPostman, name: "Postman", color: "#FF6C37" },
     { Icon: SiFigma, name: "Figma", color: "#F24E1E" },
-    { Icon: SiJsonwebtokens, name: "JWT", color: "#000000" },
-    { Icon: SiInternetcomputer, name: "REST APIs", color: "#6BA539" },
+    { Icon: SiOpencv, name: "OpenCV", color: "#000000" },
+    { Icon: SiDocker, name: "Docker", color: "#6BA539" },
   ],
 };
 
