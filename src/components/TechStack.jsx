@@ -2,9 +2,14 @@ import React from "react";
 import { filterProps, motion } from "motion/react";
 import {
   SiDocker,
+  SiExpo,
   SiFastapi,
+  SiNestjs,
   SiOpencv,
+  SiPostgresql,
   SiPython,
+  SiReactiveresume,
+  SiReactivex,
   SiReactquery,
   SiZedindustries,
 } from "react-icons/si";
@@ -34,6 +39,7 @@ import {
   SiShadcnui,
   SiInternetcomputer,
 } from "react-icons/si";
+import { IconBrandReactNative } from "@tabler/icons-react";
 
 const techStackData = {
   frontend: [
@@ -41,9 +47,9 @@ const techStackData = {
     { Icon: SiTypescript, name: "Typescript", color: "#3079c6" },
     { Icon: SiNextdotjs, name: "Next.js", color: "#000000" },
     { Icon: SiRedux, name: "Redux Toolkit", color: "#764ABC" },
-    { Icon: SiReactquery, name: "React Query", color: "#06B6D4" },
+    { Icon: SiExpo, name: "Expo", color: "#06B6D4" },
+    { Icon: IconBrandReactNative, name: "React Native", color: "#61DAFB" },
     { Icon: SiZedindustries, name: "Zustand", color: "#ffffff" },
-    { Icon: SiTailwindcss, name: "Tailwind CSS", color: "#06B6D4" },
     { Icon: SiShadcnui, name: "ShadCN", color: "#000000" },
     { Icon: SiFramer, name: "Framer Motion", color: "#feeb0f" },
     { Icon: SiJavascript, name: "JavaScript (ES6)", color: "#F7DF1E" },
@@ -55,9 +61,13 @@ const techStackData = {
     { Icon: SiNodedotjs, name: "Node.js", color: "#339933" },
     { Icon: SiPython, name: "Python", color: "#F02E65" },
     { Icon: SiExpress, name: "Express.js", color: "#000000" },
-    { Icon: SiMongodb, name: "MongoDB", color: "#47A248" },
+    { Icon: SiNestjs, name: "NestJS", color: "#F23131" },
+
     { Icon: SiFastapi, name: "FastAPI", color: "#010101" },
     { Icon: SiFirebase, name: "Firebase", color: "#FFCA28" },
+    { Icon: SiMongodb, name: "MongoDB", color: "#47A248" },
+
+    { Icon: SiPostgresql, name: "PostgreSQL", color: "#336791" },
   ],
 
   tools: [
