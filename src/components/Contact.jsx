@@ -1,47 +1,9 @@
 import React from "react";
-import {
-  SiGmail,
-  SiGithub,
-  SiInstagram,
-  SiLinkedin,
-  SiX,
-} from "react-icons/si";
+import * as Icons from "react-icons/si";
 import { motion } from "framer-motion";
+import { contactInfo } from "../data";
 
 const Contact = () => {
-  const contactInfo = [
-    {
-      icon: SiGmail,
-      title: "Mail Me",
-      link: "mailto:ybh5179@gmail.com",
-      color: "#EA4335",
-    },
-    {
-      icon: SiX,
-      title: "X (Twitter)",
-      link: "https://x.com/itsokyash_",
-      color: "#1DA1F2",
-    },
-    {
-      icon: SiGithub,
-      title: "Github",
-      link: "https://github.com/yashbhidawe",
-      color: "#000000",
-    },
-    {
-      icon: SiLinkedin,
-      title: "Linkedin",
-      link: "https://linkedin.com/in/itsokyash",
-      color: "#0A66C2",
-    },
-    {
-      icon: SiInstagram,
-      title: "Instagram",
-      link: "https://www.instagram.com/itsokyash_/",
-      color: "#E4405F",
-    },
-  ];
-
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -77,24 +39,28 @@ const Contact = () => {
         initial="hidden"
         animate="show"
       >
-        {contactInfo.map((contact, index) => (
-          <motion.div key={index} className="w-full" variants={item}>
-            <motion.a
-              href={contact.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-4 bg-zinc-800 hover:bg-zinc-700 p-6 rounded-lg text-white transition-all duration-300"
-              whileHover={{
-                scale: 1.05,
-                backgroundColor: contact.color,
-              }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <contact.icon className="w-8 h-8" />
-              <h2 className="text-xl font-medium">{contact.title}</h2>
-            </motion.a>
-          </motion.div>
-        ))}
+        {contactInfo.map((contact, index) => {
+          const IconComponent = Icons[contact.icon];
+          return (
+            <motion.div key={index} className="w-full" variants={item}>
+              <motion.a
+                href={contact.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 bg-zinc-800 hover:bg-zinc-700 p-6 rounded-lg text-white transition-all duration-300"
+                whileHover={{
+                  scale: 1.05,
+                  backgroundColor: contact.color,
+                }}
+                whileTap={{ scale: 0.95 }}
+                aria-label={contact.title}
+              >
+                {IconComponent && <IconComponent className="w-8 h-8" />}
+                <h2 className="text-xl font-medium">{contact.title}</h2>
+              </motion.a>
+            </motion.div>
+          );
+        })}
       </motion.div>
 
       <motion.p

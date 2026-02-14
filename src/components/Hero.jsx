@@ -1,11 +1,12 @@
 import React from "react";
 import { ShootingStars } from "./ui/shooting-stars";
-import { StarsBackground } from "./ui/starts-background";
+import { StarsBackground } from "./ui/stars-background";
 import heroImage2 from "../assets/images/heroImage-2.png";
-import { ArrowDown, ArrowDown01Icon, Download, Mail } from "lucide-react";
+import { Download, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+// ... existing variants code ...
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -80,6 +81,7 @@ const Hero = () => {
                 <a
                   href="https://drive.google.com/file/d/1JNDLqhHBwqM8fT7EXypclXkh96I8g9W1/view?usp=sharing"
                   target="_blank"
+                  aria-label="Download CV"
                 >
                   <motion.button
                     className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md hover:shadow-indigo-500/50 cursor-pointer"
@@ -91,7 +93,7 @@ const Hero = () => {
                   </motion.button>
                 </a>
 
-                <a href="#contact">
+                <a href="#contact" aria-label="Hire me">
                   {" "}
                   <motion.button
                     className="flex items-center gap-2 bg-transparent border-2 border-gray-500 hover:border-white text-gray-300 hover:text-white px-6 py-3 rounded-full font-medium transition-all cursor-pointer"
@@ -126,7 +128,7 @@ const Hero = () => {
                   src={heroImage2}
                   alt="Yash's profile"
                   className="rounded-full object-cover w-64 h-64 border-2 border-blue-400"
-                  loading="lazy"
+                  fetchPriority="high"
                 />
               </div>
             </motion.div>

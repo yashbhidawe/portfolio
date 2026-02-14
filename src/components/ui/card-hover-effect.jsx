@@ -11,7 +11,7 @@ export const HoverEffect = ({ items, className }) => {
     <div
       className={cn(
         "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-10",
-        className
+        className,
       )}
     >
       {items.map((item, idx) => (
@@ -58,7 +58,7 @@ export const Card = ({ className, children }) => {
     <div
       className={cn(
         "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
-        className
+        className,
       )}
     >
       <div className="relative z-50">
@@ -119,7 +119,7 @@ export const CardImage = ({ className, children }) => {
       <img
         className={cn(
           "rounded-2xl h-full w-full object-cover object-center",
-          className
+          className,
         )}
         src={children}
         alt=""
@@ -146,7 +146,7 @@ export const CardDescription = ({ className, children }) => {
     <p
       className={cn(
         "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
-        className
+        className,
       )}
     >
       {children}
