@@ -65,15 +65,18 @@ const TechStack = () => {
   const duplicatedTech = [...allTechStack, ...allTechStack];
 
   return (
-    <div className="max-w-5xl mx-auto overflow-hidden px-8 flex flex-col justify-center items-center relative">
-      <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
+    <div
+      id="tech"
+      className="max-w-5xl mx-auto overflow-hidden px-8 flex flex-col justify-center items-center relative"
+    >
+      <h2 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-white to-indigo-300 mb-12 text-center">
         Tools that I have used
       </h2>
 
       <div className="relative w-full">
         {/* Main scrolling stripe */}
         <motion.div
-          className="flex gap-6 py-6"
+          className="flex flex-nowrap w-max gap-6 py-6"
           animate={{
             x: [0, "-50%"],
           }}
@@ -81,7 +84,7 @@ const TechStack = () => {
             x: {
               repeat: Infinity,
               repeatType: "loop",
-              duration: 40,
+              duration: 20,
               ease: "linear",
             },
           }}
@@ -102,7 +105,7 @@ const TechStack = () => {
 
         {/* Second row - opposite direction */}
         <motion.div
-          className="flex gap-6 py-6 mt-6"
+          className="flex flex-nowrap w-max gap-6 py-6 mt-6"
           animate={{
             x: ["-50%", 0],
           }}
@@ -110,7 +113,7 @@ const TechStack = () => {
             x: {
               repeat: Infinity,
               repeatType: "loop",
-              duration: 40,
+              duration: 20,
               ease: "linear",
             },
           }}

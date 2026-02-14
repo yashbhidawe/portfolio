@@ -29,7 +29,7 @@ const App = () => {
       {/* GitHub Activity */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
+          <h2 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-white to-indigo-300 mb-12 text-center">
             GitHub Activity
           </h2>
 

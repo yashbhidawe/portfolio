@@ -16,7 +16,7 @@ export function Experience() {
   }));
 
   return (
-    <div className="relative w-full overflow-clip">
+    <div id="experience" className="relative w-full overflow-clip">
       <Timeline data={data} />
     </div>
   );
