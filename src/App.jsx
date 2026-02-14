@@ -14,31 +14,39 @@ const App = () => {
         <FloatingDockDemo />
       </div>
 
+      {/* Introduction */}
       <Hero />
 
-      <Experience />
-      <Projects />
+      {/* Skills showcase */}
       <TechStack />
 
-      <section className="mt-16">
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl font-semibold text-white mb-6">
+      {/* Professional background */}
+      <Experience />
+
+      {/* Work showcase */}
+      <Projects />
+
+      {/* GitHub Activity */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
             GitHub Activity
           </h2>
 
-          <img
-            src={`https://ghchart.rshah.org/2a43a8/${GITHUB_USERNAME}`}
-            alt={`${GITHUB_USERNAME} GitHub contributions`}
-            className="w-full opacity-80"
-          />
-
-          <p className="text-xs text-neutral-500 mt-3">
-            2300+ contributions in the last year
-          </p>
+          <div className="bg-neutral-900 rounded-2xl p-6 border border-neutral-800">
+            <img
+              src={`https://ghchart.rshah.org/2a43a8/${GITHUB_USERNAME}`}
+              alt={`${GITHUB_USERNAME} GitHub contributions`}
+              className="w-full opacity-80 rounded-lg"
+            />
+          </div>
         </div>
       </section>
+
+      {/* Contact/Footer */}
       <Contact />
     </div>
   );
 };
+
 export default App;
