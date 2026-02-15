@@ -33,12 +33,14 @@ const App = () => {
             GitHub Activity
           </h2>
 
-          <div className="bg-neutral-900 rounded-2xl p-6 border border-neutral-800">
-            <img
-              src={`https://ghchart.rshah.org/2a43a8/${GITHUB_USERNAME}`}
-              alt={`${GITHUB_USERNAME} GitHub contributions`}
-              className="w-full opacity-80 rounded-lg"
-            />
+          <div className="bg-neutral-900 rounded-2xl p-6 border border-neutral-800 overflow-x-auto">
+            <div className="min-w-[800px] md:min-w-full">
+              <img
+                src={`https://ghchart.rshah.org/2a43a8/${GITHUB_USERNAME}`}
+                alt={`${GITHUB_USERNAME} GitHub contributions`}
+                className="w-full opacity-80 rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </section>
