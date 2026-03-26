@@ -9,16 +9,40 @@ import {
   IconBrandNextjs,
 } from "@tabler/icons-react";
 
-import printi from "../assets/images/printi.png";
-import portfolio from "../assets/images/portfolio.png";
-import tinder from "../assets/images/tinder-for-geeks.png";
-import trillicorn from "../assets/images/trillicorn-technology.png";
-import guidena from "../assets/images/guidena.png";
-import vakrtund from "../assets/images/vakrtund.png";
+import type { Project, ContactInfo, Experience } from "./types";
+
+import printi from "@/assets/images/printi.png";
+import portfolio from "@/assets/images/portfolio.png";
+import tinder from "@/assets/images/tinder-for-geeks.png";
+import trillicorn from "@/assets/images/trillicorn-technology.png";
+import guidena from "@/assets/images/guidena.png";
+import vakrtund from "@/assets/images/vakrtund.png";
 
 export const GITHUB_USERNAME = "yashbhidawe";
 
-export const projects = [
+export const siteConfig = {
+  name: "Yash",
+  headline: "Full-stack dev \n Who cares about UX!",
+  
+  
+  location: "Pune, India",
+  
+  currentRole: "Software Engineer",
+  currentCompany: "EaseMyExpo",
+  currentCompanyUrl: "https://easemyexpo.com",
+
+  bio: "I ship end-to-end web apps using MERN and FastAPI. Previously freelanced with clients across India and abroad.",
+
+  highlights: [
+    "MERN stack + FastAPI",
+    "System design + DSA focused",
+    "UI/UX detail-oriented",
+    "Startup experience"
+  ],
+
+  resumeUrl: "https://drive.google.com/file/d/1JNDLqhHBwqM8fT7EXypclXkh96I8g9W1/view",
+};
+export const projects: Project[] = [
   {
     title: "GuidenaHQ",
     description:
@@ -89,7 +113,7 @@ export const projects = [
   },
 ];
 
-export const contactInfo = [
+export const contactInfo: ContactInfo[] = [
   {
     icon: "SiGmail",
     title: "Mail Me",
@@ -122,7 +146,7 @@ export const contactInfo = [
   },
 ];
 
-export const experienceData = [
+export const experienceData: Experience[] = [
   {
     title: "2026",
     company: "EaseMyExpo",
