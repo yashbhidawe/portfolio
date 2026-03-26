@@ -47,18 +47,19 @@ export default function Hero() {
             href={siteConfig.resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-2xl bg-surface text-[0.85rem] font-semibold text-on-surface/80 transition-all duration-300 active:scale-95 inline-flex items-center gap-2 group"
+            className="relative px-7 py-3.5 rounded-2xl bg-surface text-[0.85rem] font-bold tracking-wide text-on-surface/80 transition-all duration-400 ease-out hover:-translate-y-1 hover:text-primary active:translate-y-0.5 active:scale-95 inline-flex items-center gap-3 group border border-on-surface/[0.03] overflow-hidden"
             style={{
               boxShadow: `
-                12px 12px 24px rgba(48, 51, 46, 0.04), 
-                -12px -12px 24px rgba(255, 255, 255, 0.8),
-                inset 4px 4px 8px rgba(255, 255, 255, 0.9),
-                inset -4px -4px 8px rgba(48, 51, 46, 0.02)
+                16px 16px 32px rgba(48, 51, 46, 0.06), 
+                -16px -16px 32px rgba(255, 255, 255, 1),
+                inset 3px 3px 6px rgba(255, 255, 255, 0.8),
+                inset -3px -3px 6px rgba(48, 51, 46, 0.03)
               `,
             }}
           >
-            <span>View Resume</span>
-            <span className="opacity-40 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1">
+            <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/50 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <span className="relative z-10">View Resume</span>
+            <span className="relative z-10 opacity-40 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1">
               →
             </span>
           </a>

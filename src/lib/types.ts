@@ -5,8 +5,9 @@ export interface Project {
   title: string;
   description: string;
   link: string;
+  github?: string;  
   imageUrl: StaticImageData;
-  tech: ComponentType<{ className?: string }>[];
+  tech: ComponentType<any>[];
 }
 
 export interface ContactInfo {

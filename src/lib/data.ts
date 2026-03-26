@@ -1,13 +1,17 @@
 import {
-  IconBrandNodejs,
-  IconBrandReact,
-  IconBrandMongodb,
-  IconBrandTailwind,
-  IconBrandFirebase,
-  IconBrandFramerMotion,
-  IconBrandTypescript,
-  IconBrandNextjs,
-} from "@tabler/icons-react";
+  SiNodedotjs,
+  SiReact,
+  SiMongodb,
+  SiTailwindcss,
+  SiFirebase,
+  SiFramer,
+  SiTypescript,
+  SiNextdotjs,
+  SiPostgresql,
+  SiRedis,
+  SiNestjs,
+  SiFastapi
+} from "react-icons/si";
 
 import type { Project, ContactInfo, Experience } from "./types";
 
@@ -48,38 +52,26 @@ export const projects: Project[] = [
     description:
       "Seamless 1:1 mentorships where learners can connect with skilled mentors, send personalized requests, track statuses, manage ongoing mentorships, chat in real-time, and host video-based meetings.",
     link: "https://guidenahq.vercel.app/",
+    github: "https://github.com/yashbhidawe/GuidenaHQ",
     imageUrl: guidena,
     tech: [
-      IconBrandReact,
-      IconBrandTypescript,
-      IconBrandMongodb,
-      IconBrandNodejs,
+      SiReact,
+      SiTypescript,
+      SiMongodb,
+      SiNodedotjs,
     ],
   },
   {
-    title: "Vakratund Advertisings",
-    description:
-      "A creative agency specializing in impactful branding and digital marketing. The site was built as part of a freelance engagement, focused on delivering a visually appealing and mobile-first experience aligned with the client's brand identity.",
-    link: "https://www.vakratundaadvertising.com/",
-    imageUrl: vakrtund,
+    title: "Live-Auction",
+    description:"Live auction is a React Native app for bidding on items in real-time.",
+    link:"https://expo.dev/accounts/itsokyash/projects/live-auction/builds/53493fe0-3a46-447e-a86b-e1e7c464ebc7",
+    github:"https://github.com/yashbhidawe/Live-Auction-Client",
+    imageUrl: portfolio,
     tech: [
-      IconBrandTypescript,
-      IconBrandNextjs,
-      IconBrandFramerMotion,
-      IconBrandTailwind,
-    ],
-  },
-  {
-    title: "Tinder For Geeks",
-    description:
-      "A developer matchmaking app with real-time chat, profile swipes, and smooth animations for connecting like-minded coders.",
-    link: "https://tinder-for-geeks.vercel.app",
-    imageUrl: tinder,
-    tech: [
-      IconBrandReact,
-      IconBrandTailwind,
-      IconBrandMongodb,
-      IconBrandNodejs,
+      SiReact,
+      SiPostgresql,
+      SiRedis,
+      SiNestjs,
     ],
   },
   {
@@ -87,12 +79,35 @@ export const projects: Project[] = [
     description:
       "A modern custom printing platform supporting dynamics of e-commerce with admin control—built for print businesses.",
     link: "https://printi.in",
+    github: "https://github.com/yashbhidawe/printi.in",
     imageUrl: printi,
     tech: [
-      IconBrandReact,
-      IconBrandFirebase,
-      IconBrandTailwind,
-      IconBrandNodejs,
+      SiReact,
+      SiFirebase,
+      SiTailwindcss,
+      SiNodedotjs,
+    ],
+  },
+  {
+    title: "Stallscan",
+    description:
+      "StallScan is a tool for extracting structured data from exhibition floorplans. It identifies stall numbers, sizes, and company details using OCR + LLMs. Built with FastAPI, React, and TypeScript to power automated lead generation.",
+    link: "https://stallscan.vercel.app/",
+    imageUrl: portfolio,
+    tech: [SiFastapi, SiReact, SiTailwindcss, SiFramer],
+  },
+  {
+    title: "Tinder For Geeks",
+    description:
+      "A developer matchmaking app with real-time chat, profile swipes, and smooth animations for connecting like-minded coders.",
+    link: "https://tinder-for-geeks.vercel.app",
+    github:"https://github.com/yashbhidawe/devTinder",
+    imageUrl: tinder,
+    tech: [
+      SiReact,
+      SiTailwindcss,
+      SiMongodb,
+      SiNodedotjs,
     ],
   },
   {
@@ -100,16 +115,23 @@ export const projects: Project[] = [
     description:
       "Responsive landing page built for a tech startup to showcase services, attract clients, and build credibility through clean UI/UX.",
     link: "https://trillicorn-technology.vercel.app/",
+    github: "https://github.com/yashbhidawe/",
     imageUrl: trillicorn,
-    tech: [IconBrandReact, IconBrandTailwind],
+    tech: [SiReact, SiTailwindcss],
   },
   {
-    title: "Itsokyash",
+    title: "Vakratund Advertisings",
     description:
-      "Personal portfolio site showcasing projects, experience, and contact form—built with smooth transitions and a focus on design precision.",
-    link: "https://itsokyash.vercel.app",
-    imageUrl: portfolio,
-    tech: [IconBrandReact, IconBrandTailwind, IconBrandFramerMotion],
+      "A creative agency specializing in impactful branding and digital marketing. The site was built as part of a freelance engagement, focused on delivering a visually appealing and mobile-first experience aligned with the client's brand identity.",
+    link: "https://www.vakratundaadvertising.com/",
+    github: "https://github.com/yashbhidawe/",
+    imageUrl: vakrtund,
+    tech: [
+      SiTypescript,
+      SiNextdotjs,
+      SiFramer,
+      SiTailwindcss,
+    ],
   },
 ];
 
@@ -133,7 +155,7 @@ export const contactInfo: ContactInfo[] = [
     color: "#000000",
   },
   {
-    icon: "SiLinkedin",
+    icon: "FaLinkedin",
     title: "Linkedin",
     link: "https://linkedin.com/in/itsokyash",
     color: "#0A66C2",
