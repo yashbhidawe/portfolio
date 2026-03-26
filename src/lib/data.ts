@@ -155,7 +155,7 @@ export const contactInfo: ContactInfo[] = [
     color: "#000000",
   },
   {
-    icon: "SiLinkedin",
+    icon: "FaLinkedin",
     title: "Linkedin",
     link: "https://linkedin.com/in/itsokyash",
     color: "#0A66C2",

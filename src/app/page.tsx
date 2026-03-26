@@ -2,6 +2,7 @@ import Hero from "@/components/hero";
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
 import GitHubGraph from "@/components/github-graph";
+import Contact from "@/components/contact";
 
 export default function Page() {
   return (
@@ -10,6 +11,7 @@ export default function Page() {
       <Experience />
       <Projects />
       <GitHubGraph />
+      <Contact />
     </div>
   );
 }
