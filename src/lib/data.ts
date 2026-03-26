@@ -148,7 +148,7 @@ export const contactInfo: ContactInfo[] = [
 
 export const experienceData: Experience[] = [
   {
-    title: "2026",
+    title: "2025 - Present",
     company: "EaseMyExpo",
     role: "Software Engineer",
     description:
@@ -156,7 +156,7 @@ export const experienceData: Experience[] = [
     tech: "FastAPI / MERN / Three.js / Firebase / Redis",
   },
   {
-    title: "2025",
+    title: "Feb 2025 - Apr 2025",
     company: "EaseMyExpo",
     role: "Software Engineer (Intern)",
     description:
@@ -164,7 +164,7 @@ export const experienceData: Experience[] = [
     tech: "FastAPI / Hono / MERN / Firebase",
   },
   {
-    title: "2024",
+    title: "2024 - 2025",
     company: "Freelance",
     role: "Frontend Developer",
     description:
@@ -172,7 +172,7 @@ export const experienceData: Experience[] = [
     tech: "React / Tailwind / Firebase",
   },
   {
-    title: "2023",
+    title: "2023 - 2024",
     company: "Trillicorn Technology",
     role: "Frontend Intern",
     description:
