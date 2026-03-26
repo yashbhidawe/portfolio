@@ -8,8 +8,16 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
-dist-ssr
+.bun/
+# Build / Output
+.next/
+out/
+build/
+dist/
+dist-ssr/
+
+# Local env files
+.env*.local
 *.local
 
 # Editor directories and files
@@ -22,3 +30,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Next.js
+next-env.d.ts
+.vercel/
+
+# TypeScript (if added later)
+*.tsbuildinfo
+next-env.d.ts
