@@ -3,9 +3,9 @@ import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 
 export default function Experience() {
   return (
-    <section className="max-w-2xl mx-auto px-6 py-24 pb-40">
-      <div className="w-full border-t border-on-surface/[0.04] mb-20" />
-      <div className="mb-12">
+    <section className="max-w-2xl mx-auto px-6 pt-0 pb-12 md:pb-16">
+      <div className="w-full border-t border-on-surface/[0.04] mb-6 md:mb-8" />
+      <div className="mb-6">
         <h2 className="font-display text-headline mb-2 text-on-surface">
           Experience
         </h2>
@@ -17,7 +17,7 @@ export default function Experience() {
       <div className="space-y-0 text-on-surface/80">
         {experienceData.map((item, index) => (
           <div key={index} className="group">
-            <div className="flex items-start gap-6 py-8">
+            <div className="flex items-start gap-4 py-5">
               {/* Logo (With Animated Tooltip) */}
               <div className="shrink-0 flex items-center justify-center">
                 <AnimatedTooltip
@@ -33,7 +33,7 @@ export default function Experience() {
               </div>
 
               {/* Text Info */}
-              <div className="pt-1 flex-1">
+              <div className="flex-1">
                 <h3 className="font-body text-[0.95rem] font-semibold text-on-surface leading-tight">
                   {item.role} at {item.company}
                 </h3>

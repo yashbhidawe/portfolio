@@ -6,9 +6,9 @@ import { SiGithub } from "react-icons/si";
 
 export default function Projects() {
   return (
-    <section className="max-w-2xl mx-auto px-6 py-24 pb-40">
-      <div className="w-full border-t border-on-surface/[0.04] mb-20" />
-      <div className="mb-12">
+    <section className="max-w-2xl mx-auto px-6 pt-0 pb-16 md:pb-20">
+      <div className="w-full border-t border-on-surface/[0.04] mb-8 md:mb-10" />
+      <div className="mb-8">
         <h2 className="font-display text-headline mb-2 text-on-surface">
           Projects
         </h2>
@@ -20,7 +20,7 @@ export default function Projects() {
       <div className="space-y-0 text-on-surface/80">
         {projects.map((project, index) => (
           <div key={index} className="group">
-            <div className="flex items-start gap-6 py-8">
+            <div className="flex items-start gap-5 py-6">
               {/* Logo (With Animated Tooltip) */}
               <div className="shrink-0 flex items-center justify-center mt-1 group-hover:scale-105 transition-transform duration-300">
                 <Link href={project.link} target="_blank" rel="noopener noreferrer">
@@ -62,12 +62,12 @@ export default function Projects() {
                     </Link>
                   )}
                 </div>
-                <p className="font-body text-sm text-on-surface/60 mt-3 leading-relaxed">
+                <p className="font-body text-sm text-on-surface/60 mt-2.5 leading-relaxed">
                   {project.description}
                 </p>
 
                 {/* Tech Stack */}
-                <div className="flex flex-wrap gap-4 mt-5">
+                <div className="flex flex-wrap gap-4 mt-4">
                   {project.tech.map((Icon, i) => (
                     <div
                       key={i}

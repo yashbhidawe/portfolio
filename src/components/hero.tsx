@@ -4,7 +4,7 @@ import heroImage from "@/assets/images/heroImage.png";
 
 export default function Hero() {
   return (
-    <section className="max-w-2xl mx-auto px-6 pt-32 pb-20 md:pt-40 md:pb-28">
+    <section className="max-w-2xl mx-auto h-screen px-6 pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col justify-center">
       <div className="flex items-center gap-5 mb-12">
         <div className="w-16 h-16 rounded-md overflow-hidden ambient-shadow rotate-[-3deg] hover:rotate-0 transition-transform duration-500 shrink-0">
           <Image
