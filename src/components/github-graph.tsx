@@ -48,11 +48,11 @@ export default function GitHubGraph() {
   }, []);
 
   return (
-    <section className="max-w-2xl mx-auto px-6 py-24 pb-48">
+    <section className="max-w-2xl mx-auto px-6 pt-0 pb-20 md:pb-24">
       {/* Subtle Divider */}
-      <div className="w-full border-t border-on-surface/[0.04] mb-20" />
+      <div className="w-full border-t border-on-surface/[0.04] mb-8 md:mb-10" />
 
-      <div className="mb-12">
+      <div className="mb-8">
         <h2 className="font-display text-[2rem] text-on-surface leading-tight mb-4">
           GitHub
         </h2>
@@ -77,9 +77,7 @@ export default function GitHubGraph() {
         transition={{ duration: 0.45 }}
         className="relative overflow-hidden grayscale"
       >
-        <div 
-          className="overflow-x-auto pb-6 no-scrollbar"
-        >
+        <div className="overflow-x-auto pb-5 no-scrollbar">
           <style>{`
             .no-scrollbar::-webkit-scrollbar {
               display: none !important;
@@ -104,7 +102,7 @@ export default function GitHubGraph() {
           </div>
         </div>
 
-        <div className="flex justify-between items-center text-[0.65rem] text-on-surface/30 font-body uppercase tracking-[0.15em] border-t border-on-surface/[0.03] pt-6">
+        <div className="flex justify-between items-center text-[0.65rem] text-on-surface/30 font-body uppercase tracking-[0.15em] border-t border-on-surface/[0.03] pt-5">
           <span>{totalCount.toLocaleString()} contributions in the last year</span>
           <div className="flex items-center gap-3">
             <span>Less</span>
