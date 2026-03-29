@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Newsreader, Public_Sans } from "next/font/google";
 import "./globals.css";
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     "FastAPI",
     "TypeScript",
     "MERN",
-    "AI Tools"
+    "AI Tools",
   ],
   authors: [{ name: "Yash Bhidawe", url: "https://itsokyash.online" }],
   creator: "Yash Bhidawe",
@@ -71,7 +72,7 @@ export const metadata: Metadata = {
       "Yash Bhidawe is a Full-Stack Software Engineer building scalable systems and pixel-perfect UIs. Explore my digital archive of MERN & FastAPI apps and AI tools.",
     creator: "@itsokyash_",
     images: ["https://itsokyash.online/og-image.png"],
-    },
+  },
 };
 
 export default function RootLayout({
@@ -87,13 +88,13 @@ export default function RootLayout({
     jobTitle: "Software Engineer",
     worksFor: {
       "@type": "Organization",
-      name: "EaseMyExpo"
+      name: "EaseMyExpo",
     },
     sameAs: [
       "https://github.com/yashbhidawe",
       "https://linkedin.com/in/itsokyash",
-      "https://x.com/itsokyash_"
-    ]
+      "https://x.com/itsokyash_",
+    ],
   };
 
   return (
@@ -103,6 +104,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Analytics />
         {children}
       </body>
     </html>
