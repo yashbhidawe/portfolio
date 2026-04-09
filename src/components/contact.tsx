@@ -1,6 +1,18 @@
+"use client";
 import { contactInfo } from "@/lib/data";
 import Link from "next/link";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
+import { SiGmail, SiX, SiGithub, SiInstagram } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
+import type { ComponentType } from "react";
+
+const iconMap: Record<string, ComponentType<{ size?: number; className?: string }>> = {
+  SiGmail,
+  SiX,
+  SiGithub,
+  FaLinkedin,
+  SiInstagram,
+};
 
 export default function Contact() {
   return (
@@ -31,6 +43,7 @@ export default function Contact() {
                       name: contact.title,
                       designation: "Get in touch",
                       initials: contact.title.charAt(0).toUpperCase(),
+                      icon: iconMap[contact.icon],
                     },
                   ]}
                 />
