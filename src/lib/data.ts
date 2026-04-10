@@ -10,7 +10,7 @@ import {
   SiPostgresql,
   SiRedis,
   SiNestjs,
-  SiFastapi
+  SiFastapi,
 } from "react-icons/si";
 
 import type { Project, ContactInfo, Experience } from "./types";
@@ -27,10 +27,9 @@ export const GITHUB_USERNAME = "yashbhidawe";
 export const siteConfig = {
   name: "Yash",
   headline: "Full-stack dev \n Who cares about UX!",
-  
-  
+
   location: "Pune, India",
-  
+
   currentRole: "Software Engineer",
   currentCompany: "EaseMyExpo",
   currentCompanyUrl: "https://easemyexpo.com",
@@ -41,10 +40,11 @@ export const siteConfig = {
     "MERN stack + FastAPI",
     "System design + DSA focused",
     "UI/UX detail-oriented",
-    "Startup experience"
+    "Startup experience",
   ],
 
-  resumeUrl: "https://drive.google.com/file/d/1JNDLqhHBwqM8fT7EXypclXkh96I8g9W1/view",
+  resumeUrl:
+    "https://drive.google.com/file/d/1JNDLqhHBwqM8fT7EXypclXkh96I8g9W1/view",
 };
 export const projects: Project[] = [
   {
@@ -54,25 +54,16 @@ export const projects: Project[] = [
     link: "https://guidenahq.vercel.app/",
     github: "https://github.com/yashbhidawe/GuidenaHQ",
     imageUrl: guidena,
-    tech: [
-      SiReact,
-      SiTypescript,
-      SiMongodb,
-      SiNodedotjs,
-    ],
+    tech: [SiReact, SiTypescript, SiMongodb, SiNodedotjs],
   },
   {
     title: "Live-Auction",
-    description:"Live auction is a React Native app for bidding on items in real-time.",
-    link:"https://expo.dev/accounts/itsokyash/projects/live-auction/builds/53493fe0-3a46-447e-a86b-e1e7c464ebc7",
-    github:"https://github.com/yashbhidawe/Live-Auction-Client",
+    description:
+      "Live auction is a React Native app for bidding on items in real-time.",
+    link: "https://expo.dev/accounts/itsokyash/projects/live-auction/builds/53493fe0-3a46-447e-a86b-e1e7c464ebc7",
+    github: "https://github.com/yashbhidawe/Live-Auction-Client",
     imageUrl: portfolio,
-    tech: [
-      SiReact,
-      SiPostgresql,
-      SiRedis,
-      SiNestjs,
-    ],
+    tech: [SiReact, SiPostgresql, SiRedis, SiNestjs],
   },
   {
     title: "Printi.in",
@@ -81,12 +72,7 @@ export const projects: Project[] = [
     link: "https://printi.in",
     github: "https://github.com/yashbhidawe/printi.in",
     imageUrl: printi,
-    tech: [
-      SiReact,
-      SiFirebase,
-      SiTailwindcss,
-      SiNodedotjs,
-    ],
+    tech: [SiReact, SiFirebase, SiTailwindcss, SiNodedotjs],
   },
   {
     title: "Stallscan",
@@ -101,14 +87,9 @@ export const projects: Project[] = [
     description:
       "A developer matchmaking app with real-time chat, profile swipes, and smooth animations for connecting like-minded coders.",
     link: "https://tinder-for-geeks.vercel.app",
-    github:"https://github.com/yashbhidawe/devTinder",
+    github: "https://github.com/yashbhidawe/devTinder",
     imageUrl: tinder,
-    tech: [
-      SiReact,
-      SiTailwindcss,
-      SiMongodb,
-      SiNodedotjs,
-    ],
+    tech: [SiReact, SiTailwindcss, SiMongodb, SiNodedotjs],
   },
   {
     title: "Trillicorn Technology",
@@ -126,12 +107,7 @@ export const projects: Project[] = [
     link: "https://www.vakratundaadvertising.com/",
     github: "https://github.com/yashbhidawe/",
     imageUrl: vakrtund,
-    tech: [
-      SiTypescript,
-      SiNextdotjs,
-      SiFramer,
-      SiTailwindcss,
-    ],
+    tech: [SiTypescript, SiNextdotjs, SiFramer, SiTailwindcss],
   },
 ];
 
@@ -178,7 +154,7 @@ export const experienceData: Experience[] = [
     tech: "FastAPI / MERN / Three.js / Firebase / Redis",
   },
   {
-    title: "Feb 2025 - Apr 2025",
+    title: "Aug 2025 - Nov 2025",
     company: "EaseMyExpo",
     role: "Software Engineer (Intern)",
     description:

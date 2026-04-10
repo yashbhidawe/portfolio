@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, type ComponentType } from "react";
 import {
   motion,
   useTransform,
@@ -16,6 +16,7 @@ export const AnimatedTooltip = ({
     name: string;
     designation: string;
     initials: string;
+    icon?: ComponentType<{ size?: number; className?: string }>;
   }[];
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -90,9 +91,13 @@ export const AnimatedTooltip = ({
               `,
             }}
           >
-            <span className="font-body font-bold text-on-surface/60">
-              {item.initials}
-            </span>
+            {item.icon ? (
+              <item.icon size={20} className="text-on-surface/60" />
+            ) : (
+              <span className="font-body font-bold text-on-surface/60">
+                {item.initials}
+              </span>
+            )}
           </div>
         </div>
       ))}
