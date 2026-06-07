@@ -1,0 +1,34 @@
+# Yash Bhidawe
+
+> Full-stack software engineer in Pune, India. Ships end-to-end web apps with MERN and FastAPI, with strong UI/UX focus. This file summarizes itsokyash.online and related links for language models and agents.
+
+Yash Bhidawe is the public name on this portfolio. Current role: Software Engineer at EaseMyExpo (exhibition / stall tooling, AI-assisted design, OCR pipelines). Stack emphasis: React, Next.js, TypeScript, Node, MongoDB, FastAPI, PostgreSQL, Redis, Firebase. GitHub username for open source and project repos: yashbhidawe.
+
+## Site
+
+- [Home / portfolio](https://itsokyash.online/): Single-page portfolio with projects, experience, and contact.
+- [RSS feed (projects)](https://itsokyash.online/feed.xml): RSS 2.0 listing featured projects with short descriptions and links.
+
+## Profiles
+
+- [GitHub](https://github.com/yashbhidawe): Code and project repositories.
+- [LinkedIn](https://linkedin.com/in/itsokyash): Professional profile.
+- [X (Twitter)](https://x.com/itsokyash_): Social profile (@itsokyash_).
+- [Email](mailto:ybh5179@gmail.com): Direct contact.
+
+## Featured projects (live)
+
+- [GuidenaHQ](https://guidenahq.vercel.app/): Mentorship platform—requests, mentorships, real-time chat, video meetings.
+- [Printi.in](https://printi.in): Custom printing e-commerce with admin tooling.
+- [Stallscan](https://stallscan.vercel.app/): Floorplan OCR + LLMs for stall data and lead generation (FastAPI, React, TypeScript).
+- [Tinder For Geeks](https://tinder-for-geeks.vercel.app): Developer matchmaking with real-time chat and swipes.
+- [Live-Auction (Expo build)](https://expo.dev/accounts/itsokyash/projects/live-auction/builds/53493fe0-3a46-447e-a86b-e1e7c464ebc7): React Native live bidding app.
+- [Trillicorn Technology (landing)](https://trillicorn-technology.vercel.app/): Startup marketing site.
+- [Vakratund Advertisings](https://www.vakratundaadvertising.com/): Agency site (branding / marketing focus).
+
+## Optional
+
+- [Resume (Google Drive)](https://drive.google.com/file/d/1JNDLqhHBwqM8fT7EXypclXkh96I8g9W1/view): CV / resume PDF link.
+- [Sitemap](https://itsokyash.online/sitemap.xml): Crawler-oriented URL list for this domain.
+- [robots.txt](https://itsokyash.online/robots.txt): Crawler rules and sitemap pointer.
+- [Instagram](https://www.instagram.com/itsokyash_/): Personal Instagram.
