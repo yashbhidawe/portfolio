@@ -2,9 +2,11 @@
 
 import dynamic from "next/dynamic";
 import { useCallback, useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import type { Activity } from "react-github-calendar";
 import { GITHUB_USERNAME } from "@/lib/data";
+
+const ease = [0.22, 1, 0.36, 1] as const;
 
 const GitHubCalendar = dynamic(() => import("react-github-calendar").then((mod) => mod.GitHubCalendar), {
   ssr: false,
@@ -52,7 +54,13 @@ export default function GitHubGraph() {
       {/* Subtle Divider */}
       <div className="w-full border-t border-on-surface/[0.04] mb-8 md:mb-10" />
 
-      <div className="mb-8">
+      <motion.div
+        className="mb-8"
+        initial={{ opacity: 0, x: -16 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, margin: "-80px" }}
+        transition={{ duration: 0.55, ease }}
+      >
         <h2 className="font-display text-[2rem] text-on-surface leading-tight mb-4">
           GitHub
         </h2>
@@ -68,7 +76,7 @@ export default function GitHubGraph() {
             className="h-5 w-auto"
           />
         </a>
-      </div>
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0, y: 10 }}
