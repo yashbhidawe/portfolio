@@ -1,12 +1,28 @@
+"use client";
 import Image from "next/image";
 import { siteConfig } from "@/lib/data";
 import heroImage from "@/assets/images/heroImage.png";
+import { motion } from "motion/react";
+
+const ease = [0.22, 1, 0.36, 1] as const;
 
 export default function Hero() {
   return (
     <section className="max-w-2xl mx-auto h-screen px-6 pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col justify-center">
-      <div className="flex items-center gap-5 mb-12">
-        <div className="w-16 h-16 rounded-md overflow-hidden ambient-shadow rotate-[-3deg] hover:rotate-0 transition-transform duration-500 shrink-0">
+      {/* Identity card */}
+      <motion.div
+        className="flex items-center gap-5 mb-12"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease }}
+      >
+        <motion.div
+          className="w-16 h-16 rounded-md overflow-hidden ambient-shadow shrink-0"
+          initial={{ rotate: -6 }}
+          animate={{ rotate: -3 }}
+          whileHover={{ rotate: 0, scale: 1.06 }}
+          transition={{ type: "spring", stiffness: 200, damping: 18 }}
+        >
           <Image
             src={heroImage}
             alt={siteConfig.name}
@@ -15,7 +31,7 @@ export default function Hero() {
             className="object-cover w-full h-full"
             priority
           />
-        </div>
+        </motion.div>
         <div className="space-y-0.5">
           <h2 className="font-body text-sm font-semibold tracking-wide text-on-surface">
             {siteConfig.name}
@@ -24,30 +40,42 @@ export default function Hero() {
             {siteConfig.location}
           </p>
         </div>
-      </div>
+      </motion.div>
 
-      <h1 className="font-display text-[2.5rem] md:text-[3.25rem] leading-[1.15] tracking-tight text-on-surface mb-10 whitespace-pre-line">
+      {/* Headline */}
+      <motion.h1
+        className="font-display text-[2.5rem] md:text-[3.25rem] leading-[1.15] tracking-tight text-on-surface mb-10 whitespace-pre-line"
+        initial={{ opacity: 0, y: 28 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease, delay: 0.12 }}
+      >
         {siteConfig.headline}
-      </h1>
+      </motion.h1>
 
-      <div className="space-y-6 text-on-surface/70 text-[0.95rem] leading-relaxed max-w-lg">
+      {/* Bio + CTA */}
+      <motion.div
+        className="space-y-6 text-on-surface/70 text-[0.95rem] leading-relaxed max-w-lg"
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.65, ease, delay: 0.24 }}
+      >
         <p>
-          Building  <a
+          Building{" "}
+          <a
             href={siteConfig.currentCompanyUrl}
             className="text-on-surface underline decoration-on-surface/20 underline-offset-4 hover:decoration-primary transition-colors font-medium"
           >
             {siteConfig.currentCompany}
-          </a> as a {siteConfig.currentRole}
-         
-          . {siteConfig.bio}
+          </a>{" "}
+          as a {siteConfig.currentRole}. {siteConfig.bio}
         </p>
 
         <div className="flex items-center gap-4 pt-4">
-          <a
+          <motion.a
             href={siteConfig.resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="relative px-7 py-3.5 rounded-2xl bg-surface text-[0.85rem] font-bold tracking-wide text-on-surface/80 transition-all duration-400 ease-out hover:-translate-y-1 hover:text-primary active:translate-y-0.5 active:scale-95 inline-flex items-center gap-3 group border border-on-surface/[0.03] overflow-hidden"
+            className="relative px-7 py-3.5 rounded-2xl bg-surface text-[0.85rem] font-bold tracking-wide text-on-surface/80 inline-flex items-center gap-3 group border border-on-surface/[0.03] overflow-hidden"
             style={{
               boxShadow: `
                 16px 16px 32px rgba(48, 51, 46, 0.06), 
@@ -56,15 +84,24 @@ export default function Hero() {
                 inset -3px -3px 6px rgba(48, 51, 46, 0.03)
               `,
             }}
+            whileHover={{ y: -3, scale: 1.02 }}
+            whileTap={{ y: 1, scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/50 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
             <span className="relative z-10">View Resume</span>
-            <span className="relative z-10 opacity-40 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1">
+            <motion.span
+              className="relative z-10 opacity-40"
+              initial={false}
+              animate={{}}
+              whileHover={{ x: 4, opacity: 1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 18 }}
+            >
               →
-            </span>
-          </a>
+            </motion.span>
+          </motion.a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
