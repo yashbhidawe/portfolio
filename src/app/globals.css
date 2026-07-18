@@ -13,8 +13,31 @@
   --secondary: #506454;
   --tertiary: #6d5c4e;
   --outline-variant: #b1b3ab;
+  --shadow-dark: rgba(48, 51, 46, 0.06);
+  --shadow-light: rgba(255, 255, 255, 1);
+  --shadow-inset-dark: rgba(48, 51, 46, 0.03);
+  --shadow-inset-light: rgba(255, 255, 255, 0.8);
   --font-display: "Newsreader", serif;
   --font-body: "Public Sans", sans-serif;
+}
+
+.dark {
+  --surface: #1a1c1e;
+  --surface-container-low: #222426;
+  --surface-container-high: #2c2f31;
+  --surface-container-highest: #343739;
+  --surface-container-lowest: #141617;
+  --on-surface: #e2e3db;
+  --primary: #8da4cc;
+  --primary-dim: #7a92bb;
+  --on-primary: #1a2538;
+  --secondary: #8aad8f;
+  --tertiary: #b89a86;
+  --outline-variant: #4a4d50;
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --shadow-light: rgba(60, 60, 60, 0.15);
+  --shadow-inset-dark: rgba(0, 0, 0, 0.2);
+  --shadow-inset-light: rgba(60, 60, 60, 0.08);
 }
 
 @theme inline {
@@ -55,8 +78,14 @@
   .ambient-shadow {
     box-shadow: 0 4px 24px -4px rgba(48, 51, 46, 0.08);
   }
+  .dark .ambient-shadow {
+    box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.3);
+  }
   .ghost-border {
     border: 1px solid rgba(177, 179, 171, 0.15);
+  }
+  .dark .ghost-border {
+    border: 1px solid rgba(255, 255, 255, 0.06);
   }
   /* Animated underline sweep for contact links */
   .contact-link {
@@ -98,4 +127,11 @@
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Theme transition overlay */
+.theme-transition-overlay {
+  will-change: clip-path, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }

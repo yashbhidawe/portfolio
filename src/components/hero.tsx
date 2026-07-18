@@ -3,12 +3,18 @@ import Image from "next/image";
 import { siteConfig } from "@/lib/data";
 import heroImage from "@/assets/images/heroImage.png";
 import { motion } from "motion/react";
+import ThemeToggle from "@/components/theme-toggle";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
 export default function Hero() {
   return (
-    <section className="max-w-2xl mx-auto h-screen px-6 pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col justify-center">
+    <section className="max-w-2xl mx-auto h-screen px-6 pt-32 pb-20 md:pt-40 md:pb-28 flex flex-col justify-center relative">
+      {/* Theme toggle */}
+      <div className="absolute top-6 right-6 md:top-10 md:right-10">
+        <ThemeToggle />
+      </div>
+
       {/* Identity card */}
       <motion.div
         className="flex items-center gap-5 mb-12"
@@ -78,17 +84,16 @@ export default function Hero() {
             className="relative px-7 py-3.5 rounded-2xl bg-surface text-[0.85rem] font-bold tracking-wide text-on-surface/80 inline-flex items-center gap-3 group border border-on-surface/[0.03] overflow-hidden"
             style={{
               boxShadow: `
-                16px 16px 32px rgba(48, 51, 46, 0.06), 
-                -16px -16px 32px rgba(255, 255, 255, 1),
-                inset 3px 3px 6px rgba(255, 255, 255, 0.8),
-                inset -3px -3px 6px rgba(48, 51, 46, 0.03)
+                16px 16px 32px var(--shadow-dark), 
+                inset 3px 3px 6px var(--shadow-inset-light),
+                inset -3px -3px 6px var(--shadow-inset-dark)
               `,
             }}
             whileHover={{ y: -3, scale: 1.02 }}
             whileTap={{ y: 1, scale: 0.97 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
-            <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/50 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-on-surface/[0.04] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
             <span className="relative z-10">View Resume</span>
             <motion.span
               className="relative z-10 opacity-40"

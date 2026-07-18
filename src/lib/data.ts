@@ -43,8 +43,7 @@ export const siteConfig = {
     "Startup experience",
   ],
 
-  resumeUrl:
-    "https://drive.google.com/file/d/1JNDLqhHBwqM8fT7EXypclXkh96I8g9W1/view",
+  resumeUrl: "/resume",
 };
 export const projects: Project[] = [
   {
@@ -177,4 +176,27 @@ export const experienceData: Experience[] = [
       "Built responsive nftOS SaaS UI and improved frontend performance.",
     tech: "Next.js / Tailwind",
   },
+];
+
+export const skills = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Node.js",
+  "Tailwind CSS",
+  "MongoDB",
+  "PostgreSQL",
+  "Redis",
+  "FastAPI",
+  "NestJS",
+  "Firebase",
+  "Framer Motion",
+  "Three.js",
+  "React Native",
+  "Hono",
+  "Python",
+  "Docker",
+  "Git",
+  "Figma",
+  "Vercel",
 ];

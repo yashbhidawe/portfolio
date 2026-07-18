@@ -1,6 +1,8 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Newsreader, Public_Sans } from "next/font/google";
+import { ThemeProvider } from "@/lib/theme-context";
+import ThemeTransition from "@/components/theme-transition";
 import "./globals.css";
 
 const newsreader = Newsreader({
@@ -101,14 +103,24 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${newsreader.variable} ${publicSans.variable}`}>
+    <html lang="en" className={`${newsreader.variable} ${publicSans.variable}`} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark')}catch(e){}})()`,
+          }}
+        />
+      </head>
       <body>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <Analytics />
-        {children}
+        <ThemeProvider>
+          <ThemeTransition />
+          <Analytics />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
