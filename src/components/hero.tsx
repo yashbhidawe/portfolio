@@ -85,7 +85,6 @@ export default function Hero() {
             style={{
               boxShadow: `
                 16px 16px 32px var(--shadow-dark), 
-                -16px -16px 32px var(--shadow-light),
                 inset 3px 3px 6px var(--shadow-inset-light),
                 inset -3px -3px 6px var(--shadow-inset-dark)
               `,
@@ -94,7 +93,7 @@ export default function Hero() {
             whileTap={{ y: 1, scale: 0.97 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
-            <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/50 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-on-surface/[0.04] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
             <span className="relative z-10">View Resume</span>
             <motion.span
               className="relative z-10 opacity-40"

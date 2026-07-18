@@ -178,3 +178,26 @@ export const experienceData: Experience[] = [
     tech: "Next.js / Tailwind",
   },
 ];
+
+export const skills = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "Node.js",
+  "Tailwind CSS",
+  "MongoDB",
+  "PostgreSQL",
+  "Redis",
+  "FastAPI",
+  "NestJS",
+  "Firebase",
+  "Framer Motion",
+  "Three.js",
+  "React Native",
+  "Hono",
+  "Python",
+  "Docker",
+  "Git",
+  "Figma",
+  "Vercel",
+];

@@ -74,8 +74,7 @@ export default function ThemeToggle() {
       className="relative w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center border border-on-surface/[0.06] transition-colors hover:bg-surface-container-high disabled:opacity-60"
       style={{
         boxShadow: `
-          4px 4px 10px var(--shadow-dark),
-          -4px -4px 10px var(--shadow-light)
+          4px 4px 10px var(--shadow-dark)
         `,
       }}
     >

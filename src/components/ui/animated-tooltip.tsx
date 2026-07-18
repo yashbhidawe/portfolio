@@ -85,7 +85,6 @@ export const AnimatedTooltip = ({
             style={{
               boxShadow: `
                 8px 8px 16px var(--shadow-dark), 
-                -8px -8px 16px var(--shadow-light),
                 inset 3px 3px 6px var(--shadow-inset-light),
                 inset -3px -3px 6px var(--shadow-inset-dark)
               `,
