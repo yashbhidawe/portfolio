@@ -5,6 +5,7 @@ import { useCallback, useState, useEffect } from "react";
 import { motion } from "motion/react";
 import type { Activity } from "react-github-calendar";
 import { GITHUB_USERNAME } from "@/lib/data";
+import { useTheme } from "@/lib/theme-context";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -16,6 +17,7 @@ const GitHubCalendar = dynamic(() => import("react-github-calendar").then((mod) 
 export default function GitHubGraph() {
   const [totalCount, setTotalCount] = useState(0);
   const [todayHours, setTodayHours] = useState<string>("--");
+  const { theme } = useTheme();
 
   const GITHUB_THEME = {
     light: ["#f0f1f3", "#7ca481", "#3e6e44", "#254e2a", "#122a15"],
@@ -48,6 +50,9 @@ export default function GitHubGraph() {
         setTodayHours("0");
       });
   }, []);
+
+  const isDark = theme === "dark";
+  const legendColors = isDark ? GITHUB_THEME.dark : GITHUB_THEME.light;
 
   return (
     <section className="max-w-2xl mx-auto px-6 pt-0 pb-20 md:pb-24">
@@ -102,7 +107,7 @@ export default function GitHubGraph() {
               blockSize={11}
               blockMargin={4}
               fontSize={12}
-              colorScheme="light"
+              colorScheme={isDark ? "dark" : "light"}
               theme={GITHUB_THEME}
               showColorLegend={false}
               showTotalCount={false}
@@ -115,7 +120,7 @@ export default function GitHubGraph() {
           <div className="flex items-center gap-3">
             <span>Less</span>
             <div className="flex gap-1.5">
-              {GITHUB_THEME.light.map((color, i) => (
+              {legendColors.map((color, i) => (
                 <div
                   key={i}
                   className="w-2.5 h-2.5 rounded-[3px] shadow-sm"

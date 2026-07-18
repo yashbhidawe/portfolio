@@ -84,10 +84,10 @@ export const AnimatedTooltip = ({
             className="w-12 h-12 rounded-xl bg-surface flex items-center justify-center shrink-0 border border-on-surface/[0.03] transition-transform duration-300 group-hover:scale-105 group-hover:z-30 relative cursor-pointer"
             style={{
               boxShadow: `
-                8px 8px 16px rgba(48, 51, 46, 0.04), 
-                -8px -8px 16px rgba(255, 255, 255, 0.8),
-                inset 3px 3px 6px rgba(255, 255, 255, 0.9),
-                inset -3px -3px 6px rgba(48, 51, 46, 0.02)
+                8px 8px 16px var(--shadow-dark), 
+                -8px -8px 16px var(--shadow-light),
+                inset 3px 3px 6px var(--shadow-inset-light),
+                inset -3px -3px 6px var(--shadow-inset-dark)
               `,
             }}
           >
