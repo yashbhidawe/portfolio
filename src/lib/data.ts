@@ -43,8 +43,7 @@ export const siteConfig = {
     "Startup experience",
   ],
 
-  resumeUrl:
-    "https://drive.google.com/file/d/1JNDLqhHBwqM8fT7EXypclXkh96I8g9W1/view",
+  resumeUrl: "/resume",
 };
 export const projects: Project[] = [
   {
