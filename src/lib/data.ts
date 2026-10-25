@@ -11,6 +11,9 @@ import {
   SiRedis,
   SiNestjs,
   SiFastapi,
+  SiGooglechrome,
+  SiGooglegemini,
+  SiDocker,
 } from "react-icons/si";
 
 import type { Project, ContactInfo, Experience } from "./types";
@@ -46,6 +49,15 @@ export const siteConfig = {
   resumeUrl: "/resume",
 };
 export const projects: Project[] = [
+  {
+    title: "Minutes",
+    description:
+      "Meeting notes for Hindi, English and Hinglish sales calls. A Manifest V3 Chrome extension captures tab audio (no bot joins), Whisper transcribes, and Gemini writes summaries with action items. Cited RAG Q&A across all meetings, self-hosted with Docker and Caddy.",
+    link: "https://minutes.itsokyash.online",
+    github: "https://github.com/yashbhidawe/minutes",
+    imageUrl: portfolio,
+    tech: [SiFastapi, SiNextdotjs, SiGooglechrome, SiGooglegemini, SiDocker],
+  },
   {
     title: "GuidenaHQ",
     description:
@@ -114,7 +126,7 @@ export const contactInfo: ContactInfo[] = [
   {
     icon: "SiGmail",
     title: "Mail Me",
-    link: "mailto:ybh5179@gmail.com",
+    link: "mailto:yashbhidawe@gmail.com",
     color: "#EA4335",
   },
   {
@@ -145,28 +157,28 @@ export const contactInfo: ContactInfo[] = [
 
 export const experienceData: Experience[] = [
   {
-    title: "2025 - Present",
+    title: "Nov 2025 - Present",
     company: "EaseMyExpo",
     role: "Software Engineer",
     description:
-      "Built AI stall design engine generating photorealistic 3D layouts → 70% faster design cycles, 45% faster validation.",
-    tech: "FastAPI / MERN / Three.js / Firebase / Redis",
+      "Built a 3D booth configurator and an AI image-to-3D pipeline (concept turnaround from days to 20 minutes), shipped 35+ backend route modules with 25+ test files, and built Leadline's FastAPI lead-extraction backend.",
+    tech: "React Three Fiber / FastAPI / Node.js / Gemini",
   },
   {
     title: "Aug 2025 - Nov 2025",
     company: "EaseMyExpo",
-    role: "Software Engineer (Intern)",
+    role: "Software Development Intern",
     description:
-      "Built OCR stall data pipeline → 90% accuracy gain; shipped across 3 production apps with 25% latency reduction.",
-    tech: "FastAPI / Hono / MERN / Firebase",
+      "Redesigned an OCR workflow with OpenCV and Tesseract, cutting manual corrections by 90%, and added preprocessing and validation layers for reliability.",
+    tech: "Python / OpenCV / Tesseract",
   },
   {
-    title: "2024 - 2025",
+    title: "Jan 2024 - Jul 2025",
     company: "Freelance",
     role: "Frontend Developer",
     description:
-      "Delivered e-commerce dashboard and marketing sites for international clients.",
-    tech: "React / Tailwind / Firebase",
+      "Delivered 5+ production apps across printing and event management with payment workflows, improving performance via code splitting and lazy loading.",
+    tech: "React / Next.js / Tailwind",
   },
   {
     title: "2023 - 2024",
@@ -192,10 +204,20 @@ export const skills = [
   "Firebase",
   "Framer Motion",
   "Three.js",
+  "React Three Fiber",
   "React Native",
   "Hono",
+  "WebSockets",
   "Python",
   "Docker",
+  "GitHub Actions",
+  "Cloudflare R2",
+  "Oracle Cloud",
+  "RAG",
+  "Gemini API",
+  "Whisper",
+  "OpenCV",
+  "Tesseract",
   "Git",
   "Figma",
   "Vercel",
